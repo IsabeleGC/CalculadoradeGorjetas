@@ -9,17 +9,6 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
 
 
-    // Valor total da conta
-    //Numero de pessoas
-    // Porcentagem da gorgeta
-       // 10%. 15% ou 20%
-    //Calcular
-    //Limpar
-
-
-
-    // Recuperar as Views ndo layout
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

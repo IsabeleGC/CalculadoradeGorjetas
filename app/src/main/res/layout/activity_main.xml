@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:layout_marginEnd="16dp"
-        android:text="EasyTip"
-        android:textSize="32dp"
+        android:text="Calculadora de Gorjetas"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Preencha os campos abaixo para realizar p calculo da sua conta "
+        android:text="Preencha os campos abaixo para realizar p calculo da sua conta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
@@ -68,8 +68,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:orientation="horizontal"
         android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@+id/til_namber_of_people"
         app:layout_constraintStart_toStartOf="@+id/til_namber_of_people"
         app:layout_constraintTop_toBottomOf="@+id/til_namber_of_people">
@@ -84,13 +84,13 @@
             android:id="@+id/rb_option_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="15%"/>
+            android:text="15%" />
 
         <RadioButton
             android:id="@+id/rb_option_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="20%"/>
+            android:text="20%" />
 
     </RadioGroup>
 
