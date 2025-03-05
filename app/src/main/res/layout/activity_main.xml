@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/topBackgroundColor" />
+
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
@@ -17,7 +23,7 @@
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <TextView
         android:id="@+id/tv_subtitle"
@@ -32,7 +38,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/title_total"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content"nb
         android:layout_margin="16dp"
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle">
 
@@ -109,7 +115,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-        android:hint="Limpar"
+        android:text="Limpar"
+        android:textColor="@color/botoeswhite"
+        android:backgroundTint="@color/limparblue"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
         app:layout_constraintStart_toStartOf="@+id/til_namber_of_people"
         app:layout_constraintTop_toBottomOf="@+id/rg_percentage" />
@@ -120,8 +128,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-        android:hint="Calcular"
-        app:layout_constraintEnd_toEndOf="@+id/til_namber_of_people"
+        android:text="Calcular"
+        android:textColor="@color/botoeswhite"
+        android:backgroundTint="@color/calcularblue"
+       app:layout_constraintEnd_toEndOf="@+id/til_namber_of_people"
         app:layout_constraintStart_toStartOf="@+id/vertical_guideline"
         app:layout_constraintTop_toBottomOf="@+id/rg_percentage" />
 
