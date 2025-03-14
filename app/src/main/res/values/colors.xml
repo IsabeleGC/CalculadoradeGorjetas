@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="corbuttonclean">#7C4DFF</color>
+    <color name="corButtondone">#7C4DFF</color>
+    <color name="buttontext">#FFFFFFFF</color>
+    <color name="topBackgroundColor">#7C4DFF</color>
+    <color name="textColorHighContrast">#212121</color>
+    <color name="textColorHintHighContrast">#757575</color>
+
 </resources>
