@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">App Gorjeta</string>
+    <string name="app_name_desc">Tips Calculator: App Gorjeta</string>
+
+    <!-- Mensagens de resultado -->
+    <string name="total_with_tips">Total com gorjeta: %1$.2f€</string>
+    <string name="tip_per_person">Gorjeta por pessoa: %1$.2f€</string>
+
+    <!-- Mensagens de erro/aviso -->
+    <string name="fill_all_fields">Preencha todos os campos.</string>
+    <string name="insert_valid_values">Insira valores válidos.</string>
+    <string name="select_percentage">Selecione uma percentagem.</string>
+    <string name="people_greater_than_zero">O número de pessoas deve ser maior que zero.</string>
+
+    <!-- Textos dos botões -->
+    <string name="btn_clean_text">Limpar</string>
+    <string name="btn_done_text">Calcular</string>
+    <string name="logo_da_calculadora_de_gorjetas">Logo da Calculadora de Gorjetas</string>
+    <string name="tips_calculator">Tips Calculator</string>
+    <string name="text_tv_subtitle">Preencha os campos abaixo para realizar o cálculo da sua conta</string>
+    <string name="hint_total">Digite o valor total da conta</string>
+    <string name="digite_o_numero">Digite o número de pessoas da mesa</string>
+    <string name="calcular">Calcular</string>
+
+    <string name="percentage_10">10%</string>
+    <string name="percentage_15">15%</string>
+    <string name="percentage_20">20%</string>
+
 </resources>
