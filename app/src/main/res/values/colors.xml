@@ -3,9 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="limparblue">#1976D2</color> <!-- Cor do botão "Limpar" -->
-    <color name="calcularblue">#1976D2</color> <!-- Cor do botão "Calcular" -->
-    <color name="botoeswhite">#FFFFFF</color> <!-- Cor do texto dos botões -->
-    <color name="topBackgroundColor">#1976D2</color>  <!-- Cor personalizada para o topo -->
+    <color name="corbuttonclean">#7C4DFF</color>
+    <color name="corButtondone">#7C4DFF</color>
+    <color name="buttontext">#FFFFFFFF</color>
+    <color name="topBackgroundColor">#7C4DFF</color>
+    <color name="textColorHighContrast">#212121</color>
+    <color name="textColorHintHighContrast">#757575</color>
 
 </resources>

@@ -10,19 +10,33 @@
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/topBackgroundColor" />
+        android:layout_height="24dp"
+        android:background="@color/topBackgroundColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="99dp"
+        android:layout_height="88dp"
+        android:layout_margin="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/logo_da_calculadora_de_gorjetas"
+        android:src="@drawable/tips_calculator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <TextView
         android:id="@+id/tv_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="237dp"
+        android:layout_height="47dp"
         android:layout_margin="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Calculadora de Gorjetas"
-        android:textSize="24dp"
+        android:text="@string/app_name_desc"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_logo"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <TextView
@@ -30,28 +44,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Preencha os campos abaixo para realizar p calculo da sua conta"
+        android:text="@string/text_tv_subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/title_total"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"nb
+        android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_total"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Digite valor total da conta"
-            android:inputType="numberDecimal" />
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_total"
+            android:inputType="numberDecimal"
+            android:textColor="@color/textColorHighContrast"
+            android:textColorHint="@color/textColorHintHighContrast" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_namber_of_people"
+        android:id="@+id/title_number_of_people"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -60,9 +79,10 @@
         app:layout_constraintTop_toBottomOf="@+id/title_total">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_number_of_people"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Digite o numero de pessoas da mesa"
+            android:hint="@string/digite_o_numero"
             android:inputType="number"
             android:maxLength="2" />
 
@@ -76,65 +96,62 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/til_namber_of_people"
-        app:layout_constraintStart_toStartOf="@+id/til_namber_of_people"
-        app:layout_constraintTop_toBottomOf="@+id/til_namber_of_people">
+        app:layout_constraintTop_toBottomOf="@+id/title_number_of_people">
 
         <RadioButton
             android:id="@+id/rb_option_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10%" />
+            android:text="@string/percentage_10" />
 
         <RadioButton
             android:id="@+id/rb_option_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="15%" />
+            android:text="@string/percentage_15" />
 
         <RadioButton
             android:id="@+id/rb_option_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="20%" />
+            android:text="@string/percentage_20" />
 
     </RadioGroup>
 
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/vertical_guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
-
-
     <Button
-        android:id="@+id/btn_clen"
-        android:layout_width="0dp"
+        android:id="@+id/btn_clean"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        android:text="Limpar"
-        android:textColor="@color/botoeswhite"
-        android:backgroundTint="@color/limparblue"
-        app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
-        app:layout_constraintStart_toStartOf="@+id/til_namber_of_people"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/corbuttonclean"
+        android:text="@string/btn_clean_text"
+        android:textColor="@color/buttontext"
+        app:layout_constraintEnd_toStartOf="@+id/btn_done"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rg_percentage" />
 
     <Button
         android:id="@+id/btn_done"
-        android:layout_width="0dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        android:text="Calcular"
-        android:textColor="@color/botoeswhite"
-        android:backgroundTint="@color/calcularblue"
-       app:layout_constraintEnd_toEndOf="@+id/til_namber_of_people"
-        app:layout_constraintStart_toStartOf="@+id/vertical_guideline"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/corButtondone"
+        android:text="@string/btn_done_text"
+        android:textColor="@color/buttontext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_clean"
         app:layout_constraintTop_toBottomOf="@+id/rg_percentage" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_clean"
+        tools:text="57.5" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>
