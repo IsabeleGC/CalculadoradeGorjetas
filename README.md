@@ -16,7 +16,7 @@ O design da aplicação foi feito utilizando **ConstraintLayout** para melhor ad
 
 | Tela Principal | Resultado |
 |---------------|----------|
-|<img src="https://github.com/user-attachments/assets/5470c513-2db4-488c-8705-9d8e3c2696e5" width = 260/> |<img src="https://github.com/user-attachments/assets/81de3853-1e6e-44af-bed9-21060a0bf091" width = 260/> |
+|<img src="https://github.com/user-attachments/assets/cf6eda6f-5c16-4004-a140-76811fbe6eeb" width = 260/> |<img src="https://github.com/user-attachments/assets/b75ce59e-7075-4129-8857-c21992bdf4a4" width = 260/> |
 
 ## 🛠️ Tecnologias Utilizadas
 - **Kotlin** 🛠️
