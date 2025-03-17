@@ -73,3 +73,5 @@ class MainActivity : AppCompatActivity() {
         binding.tvResult.text = getString(
             R.string.total_with_tips, totalWithTips
         ) + "\n" + getString(R.string.tip_per_person, tipPerPerson)
+    }
+}
