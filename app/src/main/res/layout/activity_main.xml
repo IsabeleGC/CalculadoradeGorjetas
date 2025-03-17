@@ -36,12 +36,12 @@
 
     <TextView
         android:id="@+id/tv_title"
-        android:layout_width="282dp"
-        android:layout_height="33dp"
+        android:layout_width="293dp"
+        android:layout_height="43dp"
         android:layout_margin="16dp"
         android:layout_marginEnd="12dp"
-        android:text="Calculadora de Gorjetas"
-        android:textSize="24dp"
+        android:text="Tips Calculator"
+        android:textSize="32dp"
         app:layout_constraintBottom_toTopOf="@+id/tv_subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_exemplo"
