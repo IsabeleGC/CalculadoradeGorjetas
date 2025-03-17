@@ -1,4 +1,4 @@
-## 📱 Tips Calculator / Calculadora de Gorjeta
+## 📱 Tips Calculator / Calculadora de Gorjetas
 
 Este é um aplicativo Android simples desenvolvido em Kotlin para calcular gorjetas de forma fácil e rápida. 🚀
 
